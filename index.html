@@ -10,6 +10,19 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .modal-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-[#F9F6E2]">
@@ -475,7 +488,7 @@
           </div>
           <!-- Price Container -->
           <div>
-            <div class="bg-white p-4">
+            <div class="bg-white p-1 lg:p-4">
               <p class="text-2xl font-semibold px-4 py-1">Have coupon?</p>
               <input
                 type="text"
@@ -517,6 +530,25 @@
               >
                 Make Purchase
               </button>
+
+              <!-- Modal -->
+              <div class="modal-container" id="my-modal">
+                <div class="bg-white p-4 rounded-lg">
+                  <img class="block mx-auto" src="images/congo.png" alt="" />
+                  <h3 class="font-bold text-center text-2xl lg:text-5xl">
+                    Congratulations
+                  </h3>
+                  <p class="py-2 lg:py-4 text-center text-base lg:text-lg">
+                    Your Purchase the product
+                  </p>
+                  <button
+                    id="go-home-btn"
+                    class="p-1 lg:p-2 bg-[#E527B2] text-base lg:text-lg rounded-lg font-medium lg:font-semibold text-center block mx-auto text-white"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

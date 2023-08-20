@@ -42,6 +42,11 @@ document.getElementById("btn-apply").addEventListener("click", function () {
   }
 });
 
-// const discountPriceSting = parseFloat(discountPriceString.innerText).toFixed;
-// const discountPrice = parseFloat(discountPriceSting);
-// console.log(typeof floatingTotal);
+const myModal = document.getElementById("my-modal");
+document.getElementById("btn-purchase").addEventListener("click", function () {
+  myModal.style.display = "flex";
+});
+document.getElementById("go-home-btn").addEventListener("click", function () {
+  myModal.style.display = "none";
+  window.location.reload();
+});
