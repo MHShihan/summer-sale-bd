@@ -31,7 +31,7 @@ document.getElementById("btn-apply").addEventListener("click", function () {
   const couponFieldValue = document.getElementById("coupon-field").value;
   const newTotalPriceString = document.getElementById("total-price").innerText;
   const newTotalPrice = parseFloat(newTotalPriceString);
-  if (couponFieldValue == "SELL20") {
+  if (couponFieldValue == "SELL200") {
     const percentage = 0.2;
     const result = newTotalPrice * percentage;
     document.getElementById("discount-price").innerText = result.toFixed(2);
